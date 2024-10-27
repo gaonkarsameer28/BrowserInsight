@@ -3,7 +3,7 @@ const harLog = {
     log: {
         version: "1.2",
         creator: {
-            name: "Browser Insight",
+            name: "Tab Inside",
             version: "1.0"
         },
         entries: []
