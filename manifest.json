@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Tab Inside",
-    "version": "1.0",
+    "version": "1.2",
     "description": "A browser extension to log network requests and download them as a file.",
     "permissions": [
       "webRequest",
