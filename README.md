@@ -1,6 +1,6 @@
-# Browser Insight
+# Tab Inside
 
-**Browser Insight** is a browser extension designed to monitor and log real-time network activity, performance metrics, and JavaScript errors within your browser. Gain detailed insights into your web applications and optimize user experience through comprehensive, customizable monitoring.
+**Tab Inside** is a browser extension designed to monitor and log real-time network activity, performance metrics, and JavaScript errors within your browser. Gain detailed insights into your web applications and optimize user experience through comprehensive, customizable monitoring.
 
 ## Features
 
