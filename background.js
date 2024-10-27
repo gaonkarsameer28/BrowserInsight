@@ -4,7 +4,7 @@ const harLog = {
         version: "1.2",
         creator: {
             name: "Tab Inside",
-            version: "1.2"
+            version: "1.0"
         },
         entries: []
     }
