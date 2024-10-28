@@ -8,6 +8,8 @@
     "webRequestBlocking",
     "activeTab",
     "storage",
+    "alarms",
+    "downloads",
     "<all_urls>"
   ],
   "background": {

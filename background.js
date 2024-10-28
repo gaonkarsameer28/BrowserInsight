@@ -70,3 +70,26 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         sendResponse({ success: true });
     }
 });
+
+// Set up an alarm to auto-download the HAR file every 1 minute
+chrome.alarms.create("autoDownloadHAR", { periodInMinutes: 1 });
+
+chrome.alarms.onAlarm.addListener((alarm) => {
+    if (alarm.name === "autoDownloadHAR") {
+        autoSaveHAR();
+    }
+});
+
+// Function to save HAR file automatically
+function autoSaveHAR() {
+    const blob = new Blob([JSON.stringify(harLog, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    chrome.downloads.download({
+        url: url,
+        filename: `network_log_${Date.now()}.har`,  // Correctly use backticks
+        saveAs: false
+    });
+
+    URL.revokeObjectURL(url);
+}
